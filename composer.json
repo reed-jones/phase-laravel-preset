@@ -1,0 +1,28 @@
+{
+    "name": "reed-jones/phase-preset",
+    "description": "A laravel preset for Phase",
+    "type": "library",
+    "license": "ISC",
+    "authors": [
+        {
+            "name": "Reed Jones",
+            "email": "reedjones@reedjones.com"
+        }
+    ],
+    "require": {
+        "laravel/ui": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ReedJones\\PhasePreset\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ReedJones\\PhasePreset\\PhasePresetServiceProvider",
+                "Laravel\\Ui\\UiServiceProvider"
+            ]
+        }
+    }
+}
