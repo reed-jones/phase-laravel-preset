@@ -14,6 +14,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Auth::routes();
+Route::name('Auth.')->group(function () {
+    Route::phase('/login', 'Auth\LoginController@LoginPage')->name('LoginPage');
+    Route::phase('/register', 'Auth\RegisterController@RegisterPage')->name('RegisterPage');
+    Route::get('/logout', 'Auth\LoginController@logout')->name('Logout');
+});
 
 Route::phase('/', 'PhaseController@HomePage');
 Route::phase('/about', 'PhaseController@AboutPage');

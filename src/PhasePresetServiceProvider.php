@@ -2,7 +2,6 @@
 
 namespace ReedJones\PhasePreset;
 
-use Exception;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Ui\UiCommand;
 use ReedJones\PhasePreset\PhasePreset;

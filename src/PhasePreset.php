@@ -2,7 +2,6 @@
 
 namespace ReedJones\PhasePreset;
 
-use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
 use Laravel\Ui\Presets\Preset as LaravelPreset;
 use Laravel\Ui\UiCommand;
